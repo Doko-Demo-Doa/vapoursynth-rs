@@ -4,3 +4,4 @@ vapoursynth-sys/target/
 vapoursynth/target/
 **/*.rs.bk
 Cargo.lock
+.DS_Store
