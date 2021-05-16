@@ -1,6 +1,6 @@
 [package]
 name = "vapoursynth"
-version = "0.3.0" # remember to update html_root_url
+version = "0.4.0" # remember to update html_root_url
 authors = ["Ivan Molodetskikh <yalterz@gmail.com>"]
 description = "Safe Rust wrapper for VapourSynth and VSScript."
 license = "MIT/Apache-2.0"
@@ -16,12 +16,14 @@ travis-ci = { repository = "YaLTeR/vapoursynth-rs" }
 appveyor = { repository = "YaLTeR/vapoursynth-rs" }
 
 [dependencies]
-bitflags = "1"
+bitflags = "1.2.1"
+anyhow = "1.0"
+thiserror = "1.0.24"
 failure = "0.1"
 failure_derive = "0.1"
-half = { version = "1", optional = true }
-lazy_static = "1"
-vapoursynth-sys = { version = "0.3", path = "../vapoursynth-sys" }
+half = { version = "1.7.1", optional = true }
+lazy_static = "1.4.0"
+vapoursynth-sys = { version = "0.4", path = "../vapoursynth-sys" }
 
 [dev-dependencies]
 clap = "2"
