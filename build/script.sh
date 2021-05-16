@@ -7,7 +7,7 @@ sudo apt-get install nasm
 [ -z $1 ] || sudo dpkg --add-architecture i386 && \
              sudo apt-get update && \
              sudo apt-get install gcc-multilib g++-multilib \
-                                  libpython3.6-dev:i386
+                                  libpython3.9-dev:i386
 
 # Install Cython
 sudo pip3 install cython

@@ -72,7 +72,7 @@ fn get_default_library_dir() -> Option<impl Iterator<Item = String>> {
     Some(programfiles.flat_map(move |programfiles| {
         // Use both VapourSynth and VapourSynth-32 folder names.
         ["", "-32"]
-            .into_iter()
+            .iter()
             .filter_map(move |vapoursynth_suffix| {
                 let mut path = PathBuf::from(&programfiles);
                 path.push(format!("VapourSynth{}", vapoursynth_suffix));
